@@ -5,7 +5,8 @@ import day23.boardService8MVC.model.Dto.UserDto;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserDao { private static final UserDao userDao = new UserDao();
+public class UserDao {
+    private static final UserDao userDao = new UserDao();
 
     public UserDao() {
     }
@@ -14,7 +15,7 @@ public class UserDao { private static final UserDao userDao = new UserDao();
         return userDao;
     }
     public List<UserDto> users = new ArrayList<>();
-    public UserDto user = new UserDto();
+    public UserDto user = new UserDto(); // 등록된 유저 저장
 
     /**
      * addUserDto
